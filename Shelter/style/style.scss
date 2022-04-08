@@ -5,6 +5,7 @@ $color-primary-light: #fddcc4;
   padding: 0;
   margin: 0;
   border: 0;
+  box-sizing: border-box;
 }
 
 // img {
@@ -62,6 +63,7 @@ a {
 .bg-wrapper {
   background: url(../assets/images/top-background.jpg) no-repeat bottom center /
     cover;
+  height: 908px;
 }
 
 .header {
@@ -138,14 +140,14 @@ a {
     flex-direction: column;
     gap: 42px;
 
-    .heading {
+    .banner_heading {
       font-weight: 400;
       font-size: 44px;
       line-height: 130%; //57px
       color: #ffffff;
     }
 
-    .subheading {
+    .banner_subheading {
       font-family: "Arial";
       font-style: normal;
       font-weight: 400;
@@ -158,26 +160,173 @@ a {
   .banner__img {
     align-self: flex-end;
   }
+}
 
-  .btn {
+.btn {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%; //22px
+  // letter-spacing: 0.06em;
+  color: #292929;
+  display: flex;
+  align-items: center;
+  padding: 15px 45px;
+  background: $color-primary;
+  border-radius: 100px;
+  border-color: none;
+
+  &:hover {
+    background: $color-primary-light;
+    cursor: pointer;
+  }
+}
+
+.btn-banner {
+  width: 207px;
+  height: 52px;
+}
+
+.about {
+  // height: 588px;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  gap: 120px;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  padding-left: 175px;
+
+  .about__content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 430px;
+    height: 380px;
+
+    .about__content_heading {
+      font-family: "Georgia";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 35px;
+      line-height: 130%; //45px
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.06em;
+      color: #545454;
+    }
+
+    .about__content_txt {
+      font-family: "Arial";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 160%; //24px
+      display: flex;
+      align-items: center;
+      color: #4c4c4c;
+    }
+  }
+}
+
+.pets {
+  height: 877px;
+  background: #f6f6f6;
+  padding-top: 80px;
+  padding-bottom: 100px;
+
+  .pets-content {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: space-between;
+    align-items: center;
+
+    .pets-content__heading {
+      font-family: "Georgia";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 35px;
+      line-height: 130%; //45px
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.06em;
+      color: #545454;
+    }
+  }
+}
+
+.btn-arrow {
+  // display: inline-block;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  padding: 23px 19px;
+  border: 2px solid $color-primary;
+  box-sizing: border-box;
+  border-radius: 100px;
+
+  &:hover {
+    background: $color-primary-light;
+    cursor: pointer;
+  }
+}
+
+.btn-pets {
+  width: 261px;
+  height: 52px;
+}
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 53px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 90px;
+}
+
+.pet-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  width: 270px;
+  height: 435px;
+  background: #fafafa;
+  border-radius: 9px;
+
+  &:hover .btn-pet {
+    background: $color-primary-light;
+  }
+
+  .pet-item__name {
     font-family: "Georgia";
     font-style: normal;
     font-weight: 400;
-    font-size: 17px;
-    line-height: 130%; //22px
-    // letter-spacing: 0.06em;
-    color: #292929;
+    font-size: 20px;
+    line-height: 23px;
     display: flex;
     align-items: center;
-    padding: 15px 45px;
-    width: 207px;
-    height: 52px;
-    background: $color-primary;
-    border-radius: 100px;
-    border-color: none;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+  }
 
-    &:hover {
-      background: $color-primary-light;
-    }
+  .btn-pet {
+    width: 187px;
+    height: 52px;
+    border: 2px solid #f1cdb3;
+    background: #fafafa;
+    margin-bottom: 30px;
   }
 }
