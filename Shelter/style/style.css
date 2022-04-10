@@ -47,8 +47,8 @@ body {
 }
 
 .center {
-  padding-left: calc(50% - 1200px / 2);
-  padding-right: calc(50% - 1200px / 2);
+  padding-left: calc(50% - 1280px / 2);
+  padding-right: calc(50% - 1280px / 2);
 }
 
 body {
@@ -95,7 +95,7 @@ a {
   font-weight: 400;
   font-size: 32px;
   line-height: 110%;
-  color: #f1cdb3;
+  color: #f1ccb1;
   letter-spacing: 0.06em;
 }
 
@@ -129,12 +129,13 @@ a {
 }
 
 .nav-menu .nav-menu__link_active {
-  border-bottom: 3px solid #f1cdb3;
+  border-bottom: 3px solid #f1ccb1;
   color: #fafafa;
 }
 
 .nav-menu .nav-menu__link {
   color: #cdcdcd;
+  border-bottom: 3px solid rgba(241, 204, 177, 0);
 }
 
 .nav-menu .nav-menu__link:hover {
@@ -142,7 +143,7 @@ a {
 }
 
 .nav-menu .nav-menu__link:active {
-  border-bottom: 3px solid #f1cdb3;
+  border-bottom: 3px solid #f1ccb1;
   color: #fafafa;
 }
 
@@ -157,7 +158,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   gap: 42px;
-  padding: 0px 40px;
+  padding: 60px 40px 0px;
 }
 
 .banner .banner__txt {
@@ -206,7 +207,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: 15px 45px;
-  background: #f1cdb3;
+  background: #f1ccb1;
   border-radius: 100px;
   border-color: none;
 }
@@ -222,20 +223,25 @@ a {
 }
 
 .about {
+  height: 588px;
+  background: #ffffff;
+}
+
+.about .about__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #ffffff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 120px;
-  padding-top: 80px;
-  padding-bottom: 100px;
-  padding-left: 175px;
+  padding: 80px 40px 100px;
 }
 
-.about .about__content {
+.about .about__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,7 +254,7 @@ a {
   height: 380px;
 }
 
-.about .about__content .about__content_txt {
+.about .about__info .about__info_txt {
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
@@ -282,8 +288,6 @@ a {
 .pets {
   height: 877px;
   background: #f6f6f6;
-  padding-top: 80px;
-  padding-bottom: 100px;
 }
 
 .pets .pets__content {
@@ -302,6 +306,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  padding: 80px 40px 100px;
 }
 
 .btn-arrow {
@@ -314,7 +319,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: 23px 19px;
-  border: 2px solid #f1cdb3;
+  border: 2px solid #f1ccb1;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 100px;
@@ -413,7 +418,7 @@ a {
 .pet-item .btn-pet {
   width: 187px;
   height: 52px;
-  border: 2px solid #f1cdb3;
+  border: 2px solid #f1ccb1;
   background: #fafafa;
   margin-bottom: 30px;
   -webkit-transition: all 0.3s;
@@ -422,8 +427,10 @@ a {
 
 .help {
   height: 611px;
-  padding-top: 80px;
-  padding-bottom: 100px;
+  background: #ffffff;
+}
+
+.help .help__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -436,24 +443,22 @@ a {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  padding: 80px 40px 100px;
 }
 
 .help .help-list {
-  width: 1026px;
   height: 281px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: space-between;
-      -ms-flex-align: space-between;
-          align-items: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-line-pack: justify;
       align-content: space-between;
+  gap: 55px;
 }
 
 .help-list__item {
@@ -468,6 +473,8 @@ a {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  width: 170px;
+  height: 113px;
 }
 
 .help-list__item .list-icon {
@@ -494,6 +501,11 @@ a {
 }
 
 .donation {
+  background: #f6f6f6;
+  min-height: 462px;
+}
+
+.donation .donation__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -504,10 +516,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #f6f6f6;
-  min-height: 462px;
-  padding-top: 80px;
-  padding-bottom: 100px;
+  padding: 80px 40px 100px;
 }
 
 .donation .donation_img {
@@ -515,7 +524,7 @@ a {
   height: 261px;
 }
 
-.donation .donation__content {
+.donation .donation__info {
   width: 380px;
   height: 282px;
   display: -webkit-box;
@@ -547,7 +556,7 @@ a {
 .credit-card-link {
   width: 349px;
   height: 43px;
-  background: #f1cdb3;
+  background: #f1ccb1;
   border-radius: 9px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -594,6 +603,9 @@ a {
 .footer {
   min-height: 350px;
   background: url(../assets/images/footer-background.jpg) no-repeat bottom center/cover;
+}
+
+.footer .footer__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -603,9 +615,11 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 40px 40px 0;
 }
 
-.footer .footer__contacts {
+.footer .footer__block {
+  width: 302px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -613,6 +627,8 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   gap: 40px;
 }
 
@@ -630,9 +646,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -649,6 +665,11 @@ a {
   height: 32px;
 }
 
+.location-icon {
+  width: 22px;
+  height: 32px;
+}
+
 .footer-info {
   font-family: "Georgia";
   font-style: normal;
@@ -656,6 +677,6 @@ a {
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
-  color: #f1cdb3;
+  color: #f1ccb1;
 }
 /*# sourceMappingURL=style.css.map */

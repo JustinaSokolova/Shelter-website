@@ -1,4 +1,4 @@
-$color-primary: #f1cdb3;
+$color-primary: #f1ccb1;
 $color-primary-light: #fddcc4;
 
 * {
@@ -8,10 +8,6 @@ $color-primary-light: #fddcc4;
   box-sizing: border-box;
   transition: all 0.3s;
 }
-
-// img {
-//   max-width: 100%;
-// }
 
 @font-face {
   font-family: "Arial";
@@ -49,8 +45,8 @@ body {
 }
 
 .center {
-  padding-left: calc(50% - 1200px / 2); //640?
-  padding-right: calc(50% - 1200px / 2); //640?
+  padding-left: calc(50% - 1280px / 2);
+  padding-right: calc(50% - 1280px / 2);
 }
 
 body {
@@ -118,6 +114,7 @@ a {
 
   .nav-menu__link {
     color: #cdcdcd;
+    border-bottom: 3px solid rgba(241, 204, 177, 0);
 
     &:hover {
       color: #fafafa;
@@ -135,7 +132,7 @@ a {
   justify-content: space-between;
   align-items: center;
   gap: 42px;
-  padding: 0px 40px;
+  padding: 60px 40px 0px;
 
   .banner__txt {
     display: flex;
@@ -191,23 +188,25 @@ a {
 }
 
 .about {
-  // height: 588px;
-  display: flex;
-  align-items: center;
+  height: 588px;
   background: #ffffff;
-  gap: 120px;
-  padding-top: 80px;
-  padding-bottom: 100px;
-  padding-left: 175px;
 
   .about__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    padding: 80px 40px 100px;
+  }
+
+  .about__info {
     display: flex;
     flex-direction: column;
     gap: 25px;
     width: 430px;
     height: 380px;
 
-    .about__content_txt {
+    .about__info_txt {
       font-family: "Arial";
       font-style: normal;
       font-weight: 400;
@@ -235,8 +234,8 @@ a {
 .pets {
   height: 877px;
   background: #f6f6f6;
-  padding-top: 80px;
-  padding-bottom: 100px;
+  // padding-top: 80px;
+  // padding-bottom: 100px;
 
   .pets__content {
     display: flex;
@@ -245,6 +244,7 @@ a {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    padding: 80px 40px 100px;
   }
 }
 
@@ -333,22 +333,24 @@ a {
 
 .help {
   height: 611px;
-  padding-top: 80px;
-  padding-bottom: 100px;
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-  align-items: center;
-  text-align: center;
+  background: #ffffff;
+
+  .help__content {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    text-align: center;
+    padding: 80px 40px 100px;
+  }
 
   .help-list {
-    width: 1026px;
     height: 281px;
     display: flex;
-    justify-content: space-between;
-    align-items: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     align-content: space-between;
+    gap: 55px;
   }
 }
 
@@ -357,7 +359,10 @@ a {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  // margin: auto;
+  // padding-left: 60px;
+  // padding-right: 60px;
+  width: 170px;
+  height: 113px;
 
   .list-icon {
     width: 60px;
@@ -380,21 +385,23 @@ a {
 }
 
 .donation {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  align-items: center;
   background: #f6f6f6;
   min-height: 462px;
-  padding-top: 80px;
-  padding-bottom: 100px;
+
+  .donation__content {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 40px 100px;
+  }
 
   .donation_img {
     width: 505px;
     height: 261px;
   }
 
-  .donation__content {
+  .donation__info {
     width: 380px;
     height: 282px;
     display: flex;
@@ -456,14 +463,19 @@ a {
   min-height: 350px;
   background: url(../assets/images/footer-background.jpg) no-repeat bottom
     center / cover;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 
-  .footer__contacts {
-    // width: 278px;
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 40px 0;
+  }
+
+  .footer__block {
+    width: 302px;
     display: flex;
     flex-direction: column;
+    align-self: flex-start;
     gap: 40px;
   }
 
@@ -480,7 +492,7 @@ a {
 
 .contact-info {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   gap: 20px;
 }
@@ -492,6 +504,11 @@ a {
 
 .phone-icon {
   width: 40px;
+  height: 32px;
+}
+
+.location-icon {
+  width: 22px;
   height: 32px;
 }
 
