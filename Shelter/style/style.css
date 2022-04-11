@@ -103,7 +103,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 35px;
+  gap: 36px;
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
@@ -620,7 +620,7 @@ a {
 }
 
 .footer .row-padding {
-  margin: 45px 0 44px;
+  margin: 44px 0 44px;
 }
 
 .footer .footer__location {
