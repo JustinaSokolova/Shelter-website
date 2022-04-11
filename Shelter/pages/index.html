@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="../style/style.css" />
     <title>Main</title>
   </head>
@@ -12,25 +13,25 @@
       <div class="top">
         <div class="bg-wrapper center">
           <header class="header">
-            <div class="header_left">
-              <div class="logo">
-                <a class="logo_title" href="#">Cozy House</a>
+            <div>
+              <a href="index.html" class="logo">
+                <h1 class="logo_title">Cozy House</h1>
                 <p class="logo_subtitle">Shelter for pets in Boston</p>
-              </div>
+              </a>
             </div>
-            <div class="header_right nav-menu">
+            <nav class="nav-menu">
               <a href="#" class="nav-menu__link_active">About the shelter</a>
               <a href="pets.html" class="nav-menu__link">Our pets</a>
               <a href="#help-block" class="nav-menu__link">Help the shelter</a>
               <a href="#footer-block" class="nav-menu__link">Contacts</a>
-            </div>
+            </nav>
           </header>
           <div class="banner">
             <div class="banner__txt">
-              <h1 class="banner_heading">
+              <h2 class="banner_heading">
                 Not only people <br />
                 need a house
-              </h1>
+              </h2>
               <p class="banner_subheading">
                 We offer to give a chance to a little and nice puppy with an
                 extremely wide and open heart. He or she will love you more than
@@ -77,7 +78,7 @@
                 <img src="../assets/images/Arrow-left.png" alt="arrow" />
               </button>
               <div class="cards">
-                <div class="pet-card">
+                <div class="cards__pet">
                   <a href="#" class="pet-item">
                     <img src="../assets/images/pets-katrine.png" alt="cat" />
                     <p class="pet-item__name">Katrine</p>
@@ -222,7 +223,7 @@
       </div>
       <div class="footer center">
         <div class="footer__content" id="footer-block">
-          <div class="footer__block">
+          <div class="footer__contacts">
             <h3 class="footer_heading">For questions and suggestions</h3>
 
             <a href="mailto:email@shelter.com" class="contact-info">
@@ -231,7 +232,7 @@
                 src="../assets/images/mail.svg"
                 alt="mail-icon"
               />
-              <h4 class="footer-info">email@shelter.com</h4>
+              <h4 class="footer-info row-padding">email@shelter.com</h4>
             </a>
 
             <a href="tel:+136745677554" class="contact-info">
@@ -243,7 +244,7 @@
               <h4 class="footer-info">+13 674 567 75 54</h4>
             </a>
           </div>
-          <div class="footer__block">
+          <div class="footer__location">
             <h3 class="footer_heading">We are waiting for your visit</h3>
             <a
               href="https://goo.gl/maps/xxRzJBxQtNa2XcSi9"
@@ -255,7 +256,7 @@
                 src="../assets/images/pin.svg"
                 alt="location-icon"
               />
-              <h4 class="footer-info">
+              <h4 class="footer-info row-padding-2">
                 1 Central Street, Boston (entrance from the store)
               </h4>
             </a>
@@ -272,7 +273,11 @@
               <h4 class="footer-info">18 South Park, London</h4>
             </a>
           </div>
-          <img src="../assets/images/footer-puppy.png" alt="puppy" />
+          <img
+            class="footer-img"
+            src="../assets/images/footer-puppy.png"
+            alt="puppy"
+          />
         </div>
       </div>
     </div>
