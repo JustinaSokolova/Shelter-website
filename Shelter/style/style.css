@@ -41,7 +41,6 @@ a {
 
 .bg-wrapper {
   background: url(../assets/images/top-background.jpg) no-repeat bottom center/cover;
-  min-height: 832px;
 }
 
 .header {
@@ -239,7 +238,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 24px;
-  width: 430px;
+  max-width: 430px;
 }
 
 .about .about__info .about__info_txt {
@@ -286,7 +285,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 60px;
+  gap: 57px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -426,7 +425,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 60px;
+  gap: 55px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -520,7 +519,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px;
+  gap: 18px;
 }
 
 .donation .donation__subheading {
@@ -899,6 +898,9 @@ a {
   .cards__pet_none {
     display: none;
   }
+  .pets .pets__content {
+    gap: 60px;
+  }
   .help .help__content {
     padding: 80px 69px 100px;
   }
@@ -922,6 +924,9 @@ a {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     gap: 60px;
+  }
+  .donation .donation__info {
+    gap: 21px;
   }
   .footer .footer__content {
     -ms-flex-wrap: wrap;
@@ -966,9 +971,9 @@ a {
     display: block;
   }
   .header {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     gap: 41px;
     padding: 30px 53px 60px 10px;
   }
@@ -1001,7 +1006,7 @@ a {
   .banner .banner__img {
     max-width: 260px;
     max-height: 272px;
-    margin-left: 10px;
+    margin-left: 0px;
   }
   .about {
     max-height: 974px;
@@ -1012,13 +1017,14 @@ a {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     gap: 42px;
-    padding: 42px 10px 42.4px;
+    padding: 42px 25px 42.4px;
   }
   .about .about__info {
     width: auto;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    gap: 23px;
   }
   .about .about__info .about__info_txt {
     text-align: justify;
@@ -1095,21 +1101,23 @@ a {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     gap: 42px;
-    padding: 42px 10px 42px;
+    padding: 42px 20px 42px;
   }
   .donation .donation_img {
     width: 260px;
     height: 135.2px;
   }
   .donation .donation__info {
-    width: 300px;
+    width: 280px;
     height: 281px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    gap: 22px;
   }
   .donation .donation__subheading {
     text-align: center;
+    letter-spacing: 0;
   }
   .credit-card-link {
     width: 281px;
@@ -1128,15 +1136,60 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 40px;
-    padding: 30px 21px 0 21px;
+    padding: 30px 10px 0 10px;
   }
   .footer .footer-img {
     font-size: 0;
+    width: 260px;
+    height: 269px;
   }
   .footer .footer_heading {
     padding-top: 0;
     font-size: 25px;
+    width: 270px;
     text-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .footer .row-padding {
+    margin: 44px 0 44px;
+  }
+  .footer .row-padding-2 {
+    padding: 40px 0 40px;
+  }
+  .contact-info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header-wrapper .header_pets {
+    padding: 30px 50px 30px 10px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 41px;
+  }
+  .pets_block .pets_block__content {
+    padding: 42px 10px 42px;
+    gap: 42px;
+  }
+  .pets_block .cards_block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .pagination-box {
+    margin-top: 0px;
+    width: 300px;
+  }
+  .cards__pet_none4 {
+    display: none;
+  }
+  .footer-info_mob {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 /*# sourceMappingURL=style.css.map */
