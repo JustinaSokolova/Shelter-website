@@ -933,7 +933,16 @@ a {
   .donation .donation__info {
     gap: 21px;
   }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .footer .footer__content {
+    width: 708px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
@@ -1160,6 +1169,11 @@ a {
     font-size: 25px;
     width: 270px;
     text-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .footer .footer__contacts {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
