@@ -40,7 +40,11 @@ a {
 }
 
 .bg-wrapper {
-  background: url(../assets/images/top-background.jpg) no-repeat bottom center/cover;
+  background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), -webkit-gradient(linear, left bottom, left top, from(#211f20), to(#211f20));
+  background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), linear-gradient(0deg, #211f20, #211f20);
+  background-position: center, 0;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .header {
@@ -592,7 +596,8 @@ a {
 
 .footer {
   min-height: 340px;
-  background: url(../assets/images/footer-background.jpg) no-repeat bottom center/cover;
+  background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%), -webkit-gradient(linear, left bottom, left top, from(#211f20), to(#211f20));
+  background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%), linear-gradient(0deg, #211f20, #211f20);
 }
 
 .footer .footer__content {
@@ -951,9 +956,10 @@ a {
     gap: 30px;
   }
   .pets_block .cards_block {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 580px;
   }
   .pagination-box {
     margin-top: 10px;
@@ -1135,6 +1141,12 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
     gap: 40px;
     padding: 30px 10px 0 10px;
   }
@@ -1178,6 +1190,13 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .pagination-box {
     margin-top: 0px;
