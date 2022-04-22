@@ -438,7 +438,8 @@ a {
 }
 
 .help .help-list {
-  min-height: 281px;
+  max-height: 281px;
+  max-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -906,6 +907,9 @@ a {
   .pets .pets__content {
     gap: 60px;
   }
+  .help {
+    max-height: 779px;
+  }
   .help .help__content {
     padding: 80px 69px 100px;
   }
@@ -1085,6 +1089,9 @@ a {
     right: 43px;
     top: 455px;
   }
+  .help {
+    max-height: 745px;
+  }
   .help .help__content {
     padding: 42px 15px 42px;
     gap: 42px;
@@ -1096,7 +1103,8 @@ a {
     -ms-flex-line-pack: justify;
         align-content: space-between;
     gap: 30px;
-    width: 290px;
+    max-width: 290px;
+    max-height: 555px;
   }
   .help-list__item {
     width: 130px;

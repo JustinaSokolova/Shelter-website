@@ -354,7 +354,8 @@ a {
   }
 
   .help-list {
-    min-height: 281px;
+    max-height: 281px;
+    max-width: 1200px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -739,6 +740,8 @@ a {
     }
   }
   .help {
+    max-height: 779px;
+
     .help__content {
       padding: 80px 69px 100px;
     }
@@ -921,6 +924,8 @@ a {
   }
 
   .help {
+    max-height: 745px;
+
     .help__content {
       padding: 42px 15px 42px;
       gap: 42px;
@@ -929,9 +934,8 @@ a {
       justify-content: space-between;
       align-content: space-between;
       gap: 30px;
-      width: 290px;
-      // max-width: 850px;
-      // max-height: 449px;
+      max-width: 290px;
+      max-height: 555px;
     }
   }
   .help-list__item {
